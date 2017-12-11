@@ -32,6 +32,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:nrf24_schematic_library
+LIBS:nrf24-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -56,17 +57,6 @@ F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 5700 4850 50  0001 C CN
 F 3 "" H 5700 4850 50  0001 C CNN
 	1    5700 4850
 	0    1    1    0   
-$EndComp
-$Comp
-L nRF24 U1
-U 1 1 5A28B150
-P 5650 3650
-F 0 "U1" H 5650 3350 60  0000 C CNN
-F 1 "nRF24" H 5650 4000 60  0000 C CNN
-F 2 "nrf_footprints:nrf24_footprint" H 5650 3650 60  0001 C CNN
-F 3 "" H 5650 3650 60  0001 C CNN
-	1    5650 3650
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6200 3400 6500 3400
@@ -126,4 +116,15 @@ Wire Wire Line
 	4800 4450 5600 4450
 Wire Wire Line
 	5600 4450 5600 4650
+$Comp
+L nRF24 U?
+U 1 1 5A2E002F
+P 5650 3650
+F 0 "U?" H 5650 3350 60  0000 C CNN
+F 1 "nRF24" H 5650 4000 60  0000 C CNN
+F 2 "" H 5650 3650 60  0001 C CNN
+F 3 "" H 5650 3650 60  0001 C CNN
+	1    5650 3650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
