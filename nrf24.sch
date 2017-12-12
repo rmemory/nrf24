@@ -32,7 +32,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:nrf24_schematic_library
-LIBS:nrf24-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -127,4 +126,21 @@ F 3 "" H 5650 3650 60  0001 C CNN
 	1    5650 3650
 	1    0    0    -1  
 $EndComp
+$Comp
+L CP C1
+U 1 1 5A2F5C2C
+P 5600 4250
+F 0 "C1" H 5625 4350 50  0000 L CNN
+F 1 "10uF" H 5625 4150 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D10.0mm_P5.00mm" H 5638 4100 50  0001 C CNN
+F 3 "" H 5600 4250 50  0001 C CNN
+	1    5600 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 4250 6500 4250
+Connection ~ 6500 4250
+Wire Wire Line
+	5450 4250 5100 4250
+Connection ~ 5100 4250
 $EndSCHEMATC
